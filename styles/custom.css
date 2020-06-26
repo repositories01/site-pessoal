@@ -113,7 +113,7 @@ ol li {
 }
 
 .hero-image {
-  border-radius: 50%;
+  border-radius: 100%;
   width: 300px;
   height: 300px;
   margin: 25px 0;
