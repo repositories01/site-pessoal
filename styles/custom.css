@@ -1,0 +1,164 @@
+/**
+ * HTML TAGS
+ */
+
+* {
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-family: "Merriweather", serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+a,
+a:link,
+a:visited {
+  color: #83007d;
+}
+
+h1, h2 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 50px;
+  letter-spacing: -2px;
+  line-height: 50px;
+  margin: 0 0 8px 0;
+  color: #333;
+}
+
+h2 {
+  font-size: 36px;
+  color: #333;
+  letter-spacing: -0.72px;
+  line-height: 43px;
+  margin: 40px 0 4px -1.8px;
+}
+span.wave {
+  animation-name: wave-animation;    /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s;          /* Change to speed up or slow down */
+  animation-iteration-count: infinite;    /* Never stop waving :) */
+  transform-origin: 70% 70%;         /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate(  0.0deg) }
+   10% { transform: rotate(-10.0deg) }    /* The following four values can be played with to make the waving more or less extreme */
+   20% { transform: rotate( 12.0deg) }
+   30% { transform: rotate(-10.0deg) }
+   40% { transform: rotate(  9.0deg) }
+   50% { transform: rotate(  0.0deg) }    /* Reset for the last half to pause */
+  100% { transform: rotate(  0.0deg) }
+}
+
+
+p {
+  font-family: "Open Sans", sans-serif;
+  color: #333;
+  font-size: 18px;
+  letter-spacing: -0.1px;
+  line-height: 31px;
+  margin: 0 0 30px 0;
+}
+
+
+strong {
+  font-weight: 700;
+}
+
+small {
+  font-size: 80%;
+}
+
+img {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+ol li {
+  margin-bottom: 30px;
+}
+
+
+/**
+ * CUSTOM CLASSES
+ */
+
+.container {
+  max-width: 700px
+}
+.card{
+  padding: 10px;
+}
+
+.divider {
+  display: block;
+  width: 100px;
+  margin: 40px auto 30px auto;
+  border: 0;
+  border-top: 1px solid #CCC;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.hero-description {
+  color: #777;
+  letter-spacing: -0.1px;
+  line-height: 25px;
+  margin: 0 0 10px 0;
+}
+
+.hero-image {
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  margin: 25px 0;
+}
+
+.hero-links a {
+  display: inline-block;
+  font-size: 14px;
+  margin: 0 10px;
+}
+
+.margin-top-2 {
+	margin-top: 30px;
+}
+
+/**
+ * RESPONSIVE
+ */
+
+
+@media only screen and (max-width:767px) {
+
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 28px;
+    line-height: 1.2;
+  }
+
+  .divider {
+    margin: 25px auto 20px auto;
+  }
+
+  .hero-image {
+    border-radius: 50%;
+    width: 170px;
+    height: 170px;
+    margin: 25px 0;
+  }
+
+
+}
